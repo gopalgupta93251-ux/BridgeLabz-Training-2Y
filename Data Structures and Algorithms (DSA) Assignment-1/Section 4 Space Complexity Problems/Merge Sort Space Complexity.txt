@@ -1,0 +1,20 @@
+Given the sample array {8, 61, 2, 3, 4, 0}, Merge Sort divides the array into smaller subarrays and then merges those subarrays back together in sorted order.
+
+1. Extra memory required during merging:
+During the merging process, Merge Sort needs an additional temporary array to store the elements while combining the divided subarrays. This extra memory is required because the elements from the two sorted subarrays have to be compared and placed into the correct order.
+
+For an input array of size N, the temporary array can require space proportional to N. Therefore, the auxiliary space complexity of Merge Sort is O(N).
+
+The recursion used by Merge Sort also requires O(log N) stack space, but the temporary array of O(N) is the dominant factor. Hence, the overall auxiliary space complexity is O(N).
+
+2. Comparison with Insertion Sort and Quick Sort:
+Merge Sort uses O(N) auxiliary space, so it requires more additional memory than Insertion Sort. Insertion Sort is an in-place sorting algorithm and generally requires only O(1) auxiliary space.
+
+Quick Sort is also generally considered an in-place sorting algorithm because it does not require a separate temporary array for merging. Its recursion stack typically requires O(log N) space on average, although its worst-case recursion space can be O(N).
+
+Therefore, in terms of space efficiency, Insertion Sort is more space-efficient than Merge Sort, while Quick Sort is usually more space-efficient than Merge Sort.
+
+Final Answer:
+Merge Sort Auxiliary Space Complexity = O(N)
+Insertion Sort Auxiliary Space Complexity = O(1)
+Quick Sort Auxiliary Space Complexity = O(log N) average, O(N) worst case.

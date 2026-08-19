@@ -1,0 +1,17 @@
+Algorithm ReverseNumber
+
+Input: N
+
+Step 1: Read N
+
+Step 2: Set Reverse ← 0
+
+Step 3: While N > 0 do
+            Digit ← N mod 10
+            Reverse ← Reverse × 10 + Digit
+            N ← N / 10        // Integer division
+        End While
+
+Step 4: Print Reverse
+
+End Algorithm

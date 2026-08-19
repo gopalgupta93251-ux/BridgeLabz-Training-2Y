@@ -1,0 +1,24 @@
+Given the sample array {8, 61, 2, 3, 4, 0}, Merge Sort first divides the array into two halves and continues dividing each half until every subarray contains only one element. The division can be represented as follows:
+
+{8, 61, 2, 3, 4, 0}
+→ {8, 61, 2} and {3, 4, 0}
+→ {8, 61}, {2}, {3, 4}, and {0}
+→ {8}, {61}, {2}, {3}, and {4}, {0}
+
+The recurrence relation for Merge Sort is:
+
+T(N) = 2T(N/2) + O(N)
+
+Here, 2T(N/2) represents the recursive division into two halves, while O(N) represents the work required to merge the two sorted halves.
+
+Using the recursion tree method, at the first level, the total work required to merge the elements is O(N). At the next level, there are two subarrays of size N/2, so the total work is 2 × O(N/2) = O(N). At the next level, there are four subarrays of size N/4, giving 4 × O(N/4) = O(N). Thus, the total work at every level of the recursion tree is O(N).
+
+The array continues to divide until each subarray contains one element. Therefore, the number of levels in the recursion tree is approximately log₂N.
+
+Hence, the total work is:
+
+O(N) × O(log N) = O(N log N)
+
+Therefore, the time complexity of Merge Sort is O(N log N).
+
+Conclusion: Merge Sort divides the array into smaller subarrays and then merges them in sorted order. Since each level requires O(N) work and there are O(log N) levels, the overall time complexity is O(N log N).

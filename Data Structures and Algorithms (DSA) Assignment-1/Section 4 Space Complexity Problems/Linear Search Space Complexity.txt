@@ -1,0 +1,10 @@
+Given the sample array {8, 61, 2, 3, 4, 0}, Linear Search checks each element one by one to find the target value.
+
+In iterative Linear Search, no additional data structure is required. The algorithm only needs a few variables, such as the index variable and the target value. These variables use a constant amount of memory regardless of the size of the input array.
+
+Therefore, the auxiliary space complexity of iterative Linear Search is O(1).
+
+Explanation: The input array itself requires O(N) space, but this is not counted as auxiliary space because the array is already given as input. Only the extra memory used by the algorithm is considered. Since the algorithm uses only a fixed number of variables, the auxiliary space remains constant.
+
+Final Answer:
+Auxiliary Space Complexity = O(1).

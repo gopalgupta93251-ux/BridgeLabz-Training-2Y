@@ -1,0 +1,27 @@
+For the given sorted array {0, 2, 3, 4, 8, 61}, the target value is 4. Binary Search works by comparing the target with the middle element and eliminating half of the search space after every comparison.
+
+1. Step-by-step search range narrowing:
+Initially, the search range contains all six elements: {0, 2, 3, 4, 8, 61}. The middle element is 3. Since the target 4 is greater than 3, the left half is discarded and the new search range becomes {4, 8, 61}.
+
+In the second step, the middle element of {4, 8, 61} is 8. Since the target 4 is smaller than 8, the right half is discarded and the search range becomes {4}.
+
+In the third step, the middle element is 4, which is equal to the target. Therefore, the target is found after 3 comparisons.
+
+2. Worst-case mathematical equation:
+For an array containing N elements, Binary Search divides the search space by 2 after every comparison. After one comparison, the search space becomes N/2; after two comparisons, it becomes N/2²; and after k comparisons, it becomes N/2ᵏ.
+
+In the worst case, only one element remains. Therefore,
+
+N / 2ᵏ = 1
+
+This gives:
+
+N = 2ᵏ
+
+Taking logarithm on both sides:
+
+k = log₂N
+
+Thus, the maximum number of comparisons is approximately log₂N + 1. Therefore, the worst-case time complexity of iterative Binary Search is O(log N).
+
+Conclusion: Binary Search is more efficient than Linear Search for sorted arrays because it eliminates half of the remaining elements after each comparison. Its worst-case time complexity is O(log N).

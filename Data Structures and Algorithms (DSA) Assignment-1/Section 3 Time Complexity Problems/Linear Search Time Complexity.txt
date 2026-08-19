@@ -1,0 +1,13 @@
+Given the array {8, 61, 2, 3, 4, 0}, Linear Search checks each element one by one until the target element is found.
+
+1. Best Case Time Complexity:
+The best case occurs when the target element is present at the first position of the array. For example, if the target is 8, Linear Search finds it in the first comparison and stops immediately. Therefore, the Best Case Time Complexity is O(1), which is called constant time.
+
+2. Worst Case Time Complexity:
+The worst case occurs when the target element is at the last position or is not present in the array. For example, if the target is 0, all 6 elements are checked before finding it. Similarly, if the target is 5, which is not present, all elements must be checked. Therefore, the Worst Case Time Complexity is O(n), where n is the number of elements in the array.
+
+3. Average Case Time Complexity:
+In the average case, the target is located at a random position in the array. On average, approximately half of the elements need to be checked. For n elements, the average number of comparisons is approximately (n + 1) / 2. Since constants are ignored in Big-O notation, the Average Case Time Complexity is O(n).
+
+Conclusion:
+The Best Case Time Complexity of Linear Search is O(1), while the Average Case and Worst Case Time Complexities are O(n).

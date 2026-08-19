@@ -1,0 +1,22 @@
+Algorithm PrimeNumberChecker
+
+Input: N (positive integer, N > 1)
+
+Step 1: Read N
+
+Step 2: Set isPrime ← True
+
+Step 3: For i ← 2 to √N do
+            If N mod i = 0 then
+                isPrime ← False
+                Break
+            End If
+        End For
+
+Step 4: If isPrime = True then
+            Print "Prime"
+        Else
+            Print "Not Prime"
+        End If
+
+End Algorithm

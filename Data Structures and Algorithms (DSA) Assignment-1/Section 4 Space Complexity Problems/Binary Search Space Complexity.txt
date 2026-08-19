@@ -1,0 +1,10 @@
+For the given sorted array {0, 2, 3, 4, 8, 61}, Iterative Binary Search uses three main variables: low, high, and mid to keep track of the search range.
+
+These variables require a constant amount of extra memory, regardless of the size of the input array. The algorithm does not create any additional arrays or data structures.
+
+Therefore, the auxiliary space complexity of Iterative Binary Search is O(1).
+
+The input array itself requires O(N) space, but it is not counted as auxiliary space because it is already provided as input.
+
+Final Answer:
+Auxiliary Space Complexity = O(1)
